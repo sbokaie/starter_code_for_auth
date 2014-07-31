@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <% blogPosts.forEach(function(post){ %>
+     <h2> <%= blogPost.title %> </h2>
+     <p> <%= blogPost.createdAt %> </p>
+     <p> <a href="/users/<%= post.userId %>">Emotions of, User id <%= blogPost.userId %></a></p>
+     <p><%= blogPost.body %> </p>
+ <% }) %> 
+     <br><br>
+ <a href="/users">See other emotional individuals</a>
+ </body>
+ </html>
